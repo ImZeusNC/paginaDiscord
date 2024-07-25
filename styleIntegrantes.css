@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    box-sizing: border-box;
+}
+
+.contenedor1-integrantes {
+    margin: 0 auto;
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 4rem;
+}
+
+article {
+    max-width: 10rem;
+    background-color: var(--color-mantle);
+    border: 2px solid var(--color-lavanda);
+    border-radius: 15px;
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    min-width: 190px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+article p{
+    color: var(--color-texto);
+}
+
+article i {
+    color: var(--color-texto);
+    font-size: 1.5rem;
+}
+
+article:hover {
+    transform: scale(1.1);
+}
+
+.articulo1 {
+    box-shadow: 3px 3px 3px var(--color-verde);
+}
+
+.articulo1 h2, .articulo1 h3{
+    color: var(--color-verde);
+}
+
+.articulo2 {
+    box-shadow: 3px 3px 3px var(--color-mauve);
+}
+
+.articulo2 h2, .articulo2 h3{
+    color: var(--color-mauve);
+}
+
+.articulo3 {
+    box-shadow: 3px 3px 3px var(--color-rojo);
+}
+
+.articulo3 h2, .articulo3 h3{
+    color: var(--color-rojo);
+}
+
+.articulo4 {
+    box-shadow: 3px 3px 3px var(--color-verde-oscuro);
+}
+
+.articulo4 h2, .articulo4 h3{
+    color: var(--color-verde-oscuro);
+}
+
+@media screen and (max-width: 768px) {
+    .contenedor1-integrantes {
+        flex-direction: column;
+    }
+
+    article {
+        min-width: 350px;
+        min-height: 180px;
+    }
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

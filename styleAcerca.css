@@ -1,0 +1,33 @@
+.contenedor {
+    color: var(--color-texto);
+    margin: 5rem;
+    padding: 1.5rem;
+    border: .125rem solid var(--color-texto);
+    background-color: var(--color-mantle);;
+}
+
+.contenedor p {
+    font-size: 1.3rem;
+}
+
+.contenedor h1 {
+    text-align: center;
+    padding: 0 0 1rem 0;
+    color: var(--color-verde);
+}
+
+.poam {
+    color: var(--color-amarillo);
+}
+
+.progra {
+    color: var(--color-rojo);
+}
+
+.mundo {
+    color: var(--color-azul);
+}
+
+.orientada {
+    color: var(--color-verde);
+}

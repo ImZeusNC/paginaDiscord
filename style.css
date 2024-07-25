@@ -1,0 +1,280 @@
+:root {
+    --color-base: #24273A;
+    --color-mantle: #1e2030;
+    --color-azul: #8aadf4;
+    --color-verde: #a6da95;
+    --color-verde-oscuro: #40a02b;
+    --color-lavanda: #b7bdf8;
+    --color-amarillo: #eed49f;
+    --color-rojo: #ed8796;
+    --color-durazno: #f5a97f;
+    --color-mauve: #c6a0f6;
+    --color-texto: #cad3f5;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-base);
+}
+
+/*Linea de separación de inicio*/
+.separador {
+    border-color: var(--color-lavanda);
+}
+
+.navegador {
+    background-color: var(--color-base);
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    box-shadow: 0rem .8rem 8rem black;
+}
+
+.navegador i {
+    display: none;
+    color: var(--color-lavanda);
+    font-size: 28px;
+}
+
+.navegador i:hover {
+    cursor: pointer;
+}
+
+.navegador a {
+    color: var(--color-texto);
+    text-decoration: none;
+    font-weight: 300;
+    transition: font 1s ease-in-out;
+}
+
+.navegador a:hover {
+    font-weight: 1000;
+}
+
+.inicio:hover {
+    color: var(--color-rojo);
+}
+
+.integrantes:hover {
+    color: var(--color-durazno);
+}
+
+.servicios:hover {
+    color: var(--color-amarillo);
+}
+
+.acerca:hover {
+    color: var(--color-verde);
+}
+
+.proyectos:hover {
+    color: var(--color-azul);
+}
+
+.contacto:hover {
+    color: var(--color-mauve);
+}
+
+
+/*Main*/
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contenedor1 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+}
+
+.letra1 p {
+    color: var(--color-verde);
+    font-size: 3rem;
+    font-weight: 600;
+    animation: escritura 2.5s steps(35), transparente .5s step-end infinite alternate;
+    width: 27.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.188rem solid;
+}
+
+@keyframes escritura{
+    from {
+        width: 0rem;
+    }
+}
+
+@keyframes transparente {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.letra2 p {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    color: var(--color-texto);
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+/* Boton */
+ 
+.contenedor_ds_unete { /*Container Box*/
+    text-decoration: none;
+}
+
+.discord__unete { /*Box*/
+    position: relative;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+    background: #0F1227;
+    border-radius: 1.688rem;
+    overflow: hidden; 
+    box-shadow: 5px 5px 10px var(--color-azul); /* Sombra con color RGB */
+}
+
+.dsletra p {
+    padding-left: 3rem;
+    font-size: 1.5rem;
+    color: var(--color-azul);
+    font-weight: 400;
+    line-height: 2.2rem;
+}
+
+.ds i {
+    font-size: 3.5rem;
+    color: var(--color-azul);
+}
+
+.discord__unete .fondohover {
+    background: var(--color-azul);
+    width: 6.25rem;
+    height: 6.25rem;
+    position: absolute;
+    left: -5rem;
+    top: 30rem;
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
+    transition: all 500ms;
+}
+
+.discord__unete:hover .fondohover {
+    width: 60rem;
+    height: 30rem;
+    left: -25rem;
+    top: -5rem;
+}
+
+
+.discord__unete .ds i, .discord__unete .dsletra p {
+    position: relative;
+    z-index: 10;
+    transition: all 300ms;
+}
+
+.discord__unete:hover .ds i {
+    border-radius: 100%;
+    color: #0F1227;
+}
+
+.discord__unete:hover .dsletra p {
+    color: #0F1227;
+}
+
+/* Imagen */
+
+.contenedor2 img {
+    height: 33rem;
+}
+
+/* Footer */
+
+footer {
+    position: relative;
+}
+
+footer p {
+    position: relative;
+    text-align: center;
+    /*top: -.5rem;*/
+    color: var(--color-durazno);
+}
+
+/*  Version movil */
+
+@media screen and (max-width: 768px) {
+
+    /* Navegador */
+
+    .navegador {
+        flex-direction: column;
+        text-align: center;
+        position: initial;
+        width: 100%;
+        border-bottom: 2px solid transparent;
+    }
+
+    .navegador a {
+        padding-top: 15px;
+        display: none;
+    }
+
+    .navegador i {
+        justify-content: right;
+        display: flex;
+    }
+
+    /* Contenedor1 letras */
+
+    .letra1 p{
+        font-size: 3rem;
+    }
+
+    .letra2 p{
+        font-size: 2.3rem;
+    }
+
+    /* Contenedor1 boton discord */
+
+    .discord__unete {
+        padding: 1.5rem;
+    }
+
+    .dsletra p {
+        font-size: 1.3rem;
+        padding-left: 2.7rem;
+    }
+
+    /* Contenedor2 (de momento) */
+
+    .contenedor2 {
+        display: none;
+    }
+
+}
+
+/* Footer */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}

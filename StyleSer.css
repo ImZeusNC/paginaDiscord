@@ -1,0 +1,41 @@
+:root {
+    --color-base: #24273A;
+    --color-mantle: #1e2030;
+    --color-azul: #8aadf4;
+    --color-verde: #a6da95;
+    --color-verde-oscuro: #40a02b;
+    --color-lavanda: #b7bdf8;
+    --color-amarillo: #eed49f;
+    --color-rojo: #ed8796;
+    --color-durazno: #f5a97f;
+    --color-mauve: #c6a0f6;
+    --color-texto: #cad3f5;
+}
+
+body {
+    color: var(--color-texto);
+}
+
+.Comunicado{
+    position: absolute;
+    top: 10rem;
+    border: 2px solid var(--color-mauve);
+    padding: 10rem;
+    width: 30rem;
+    border-radius: 5%;
+    box-shadow: 5px 8px 10px var(--color-mauve);
+    height: auto;
+    overflow: hidden;
+}
+
+.Comunicado h1 {
+    color: var(--color-verde);
+    font-size: 3rem;
+    position: absolute;
+    top: 2rem;
+    left: 8rem;
+}
+
+.Comunicado p {
+    font-size: 1.5rem;
+}
