@@ -273,7 +273,7 @@ footer p {
 /* Footer */
 
 footer {
-    position: absolute;
+    padding: 3.5rem;
     bottom: 0;
     text-align: center;
     width: 100%;
