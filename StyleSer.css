@@ -14,28 +14,52 @@
 
 body {
     color: var(--color-texto);
+    margin: 0;
 }
 
-.Comunicado{
-    position: absolute;
-    top: 10rem;
-    border: 2px solid var(--color-mauve);
-    padding: 10rem;
-    width: 30rem;
-    border-radius: 5%;
-    box-shadow: 5px 8px 10px var(--color-mauve);
-    height: auto;
-    overflow: hidden;
+.servicios-titulo {
+    padding: 2.5rem 0rem;
+    font-size: x-large;
+    text-align: center;
 }
 
-.Comunicado h1 {
-    color: var(--color-verde);
-    font-size: 3rem;
-    position: absolute;
-    top: 2rem;
-    left: 8rem;
+.servicios-titulo h2 {
+    background-image: radial-gradient(ellipse 10rem 2px at center 35px, var(--color-amarillo) 0, transparent 100%);
 }
 
-.Comunicado p {
-    font-size: 1.5rem;
+.articles article p {
+    padding: 1rem 5rem;
+}
+
+.articles article p {
+    text-align: justify;
+}
+
+.articles .servicios-cursos .importante-leer {
+    text-align: center;
+}
+
+.articles h1 {
+    text-align: center;
+    padding: 0.5rem 2.5rem;
+    color: var(--color-rojo);
+}
+
+.articles h2 {
+    text-align: center;
+    padding: 1rem 5rem;
+}
+
+.servicios-clases h2 {
+    color: var(--color-amarillo);
+}
+
+.servicios-cursos h2 {
+    color: var(--color-durazno);
+}
+
+@media screen and (max-width: 768px){
+    .side-bar{
+        display: none;
+    }
 }
