@@ -1,3 +1,14 @@
+/*
+    stylesIntegrantes.css
+
+    Define los estilos para las cartas de presentacion de cada integrante
+    
+    - Uso de <article> para las cartas y estilizacion para sus respectivos
+      elementos como texto, subtitulos e iconos
+
+*/
+
+
 * {
     padding: 0;
     margin: 0;
@@ -12,7 +23,7 @@
     gap: 1.5rem;
     margin-top: 4rem;
 }
-
+/* ESTRUCTURA QUE USAN LAS CARTAS */
 article {
     max-width: 10rem;
     background-color: var(--color-mantle);
@@ -25,7 +36,7 @@ article {
     transition: transform 0.3s;
     cursor: pointer;
 }
-
+/* Elementos de las cartas, texto, iconos y efectos */
 article p{
     color: var(--color-texto);
 }
@@ -70,7 +81,7 @@ article:hover {
 .articulo4 h2, .articulo4 h3{
     color: var(--color-verde-oscuro);
 }
-
+/* ADAPTABILIDAD */
 @media screen and (max-width: 768px) {
     .contenedor1-integrantes {
         flex-direction: column;

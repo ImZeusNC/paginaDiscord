@@ -1,9 +1,18 @@
+/*
+    stylesAcerca.css
+    
+    Estilos para la seccion Acerca de Nosotros, especialmente, 
+    el color de las letras resaltadas y los contenedores para texto
+
+*/
+
 .contenedor {
     color: var(--color-texto);
+    background-color: var(--color-mantle);
+
     margin: 5rem;
     padding: 1.5rem;
-    border: .125rem solid var(--color-texto);
-    background-color: var(--color-mantle);;
+    border: .125rem solid var(--color-texto);    
 }
 
 .contenedor p {
@@ -15,7 +24,7 @@
     padding: 0 0 1rem 0;
     color: var(--color-verde);
 }
-
+/* Colores para texto resaltado */
 .poam {
     color: var(--color-amarillo);
 }

@@ -1,3 +1,14 @@
+/* 
+    stylesServicios.css
+
+    Define los estilos para la seccion de Servicios, se integra 
+    el uso de <article> para organizar los servicios proporcionados
+
+    - Colores de letra para encabezados y subtitulos
+
+*/
+
+
 body {
     color: var(--color-texto);
     margin: 0;
@@ -13,6 +24,7 @@ body {
     background-image: radial-gradient(ellipse 10rem 2px at center 35px, var(--color-amarillo) 0, transparent 100%);
 }
 
+/* ESTILOS PARA LOS SERVICIOS */
 .articles article p {
     padding: 1rem 5rem;
 }
@@ -43,7 +55,7 @@ body {
 .servicios-cursos h2 {
     color: var(--color-durazno);
 }
-
+/* ADAPTABILIDAD */
 @media screen and (max-width: 768px){
     .side-bar{
         display: none;

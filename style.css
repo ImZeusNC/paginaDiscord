@@ -1,3 +1,18 @@
+/* 
+    styles.css
+
+    Define la apariencia principal de la pagina web, incluye:
+
+    - variables para el color.
+    - Estilos para la pagina principal
+    - Definicion del pie de pagina y navegacion
+    - Estilos para el logo que aparece en la derecha
+
+    - Inclusion de estilos para el 'responsive'
+
+*/
+
+
 :root {
     --color-base: #24273A;
     --color-mantle: #1e2030;
@@ -28,7 +43,9 @@ body {
 .separador {
     border-color: var(--color-lavanda);
 }
-
+/* =======================
+Barra de navegacion 
+========================= */
 .navegador {
     background-color: var(--color-base);
     padding: 1rem;
@@ -59,6 +76,7 @@ body {
     font-weight: 1000;
 }
 
+/* Enlaces de la navegacion */
 .inicio:hover {
     color: var(--color-rojo);
 }
@@ -84,7 +102,9 @@ body {
 }
 
 
-/*Main*/
+/* ============
+Main
+===============*/
 
 main {
     display: flex;
@@ -131,7 +151,7 @@ main {
     font-weight: 300;
 }
 
-/* Boton */
+/* Boton de invitacion a Discord */
  
 .contenedor_ds_unete { /*Container Box*/
     text-decoration: none;
@@ -198,25 +218,31 @@ main {
     color: #0F1227;
 }
 
-/* Imagen */
+/* Imagen de la pagina principal: img/logo.png */
 
 .contenedor2 img {
     height: 33rem;
 }
 
-/* Footer */
+/*===========
+ Footer 
+ ===========*/
+footer{
+    display: flex;
+    justify-content: center; /* Permite que el contenido este centrado en x/y */
+    align-items: center;
 
-footer {
-    position: relative;
+    padding: 3.5rem;
+    width: 100vw;
 }
 
 footer p {
-    position: relative;
     text-align: center;
-    /*top: -.5rem;*/
+    bottom: 5rem;
     color: var(--color-durazno);
 }
 
+/* ADAPTABILIDAD */
 /*  Version movil */
 
 @media screen and (max-width: 768px) {
@@ -267,14 +293,4 @@ footer p {
     .contenedor2 {
         display: none;
     }
-
-}
-
-/* Footer */
-
-footer {
-    padding: 3.5rem;
-    bottom: 0;
-    text-align: center;
-    width: 100%;
 }
