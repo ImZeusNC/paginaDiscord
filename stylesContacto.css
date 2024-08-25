@@ -1,0 +1,102 @@
+/*
+    stylesContacto.css
+
+    Estilos exclusivos para la pagina de Contacto,
+    aqui se usa un diseño basado en 'float' para acomodar y
+    adaptar los elementos.
+
+    Tags: 
+    ** Desktop First **
+    ** EXCLUSIVE **
+*/
+#contacto{
+    background: var(--color-mantle);    
+}
+
+#contacto-logo{
+    margin-block: 5%;
+    text-align: center;
+    width: 50%;
+    float: left;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contacto-logo > img{
+    max-width: 100%;
+    object-fit: cover;
+}
+
+#contactos{
+    margin-inline-start: 5%;
+    margin-block: 5%;
+    width: 35%;
+    float: left;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#contactos > *{
+    color: var(--color-texto);
+    margin-block: 20%;
+}
+
+
+/* TARJETAS DE LOS CONTACTOS */
+.contacto-tarjeta{
+    background-color: var(--color-mantle);
+    border: 2px solid var(--color-lavanda);
+    border-radius: 15px;
+    padding: 1rem;
+
+    transition: transform 0.3s;
+
+}
+
+/* ESTILIZADO PARA LA LETRA Y SOMBRA */
+.contacto-tarjeta > h2[class="c-amarillo"]{
+    color: var(--color-amarillo);
+}
+.contacto-tarjeta > h2[class="c-verde"]{
+    color: var(--color-verde);
+}
+.amarillo{
+    box-shadow: 3px 3px 3px var(--color-amarillo);
+}
+.verde{
+    box-shadow: 3px 3px 3px var(--color-verde);
+}
+
+.contacto-tarjeta:hover{
+    transform: scale(1.1);
+}
+
+footer{
+    clear: both;
+}
+
+/* ADPATABILIDAD 
+    - Esto hace que la imagen se coloca al inicio y las tarjetas despues
+    - CENTRADO
+*/
+@media screen and (max-width: 768px){
+    #contacto-logo{
+        display: block;
+        float: none;
+        margin: auto;
+    }
+    #contactos{
+        width: 90vw;
+    }
+    #contactos > *{
+        margin-block: 0;
+        margin-block-end: 10%;
+    }
+    .contacto-tarjeta{
+        text-align: center;
+        width: 70%;
+    }
+}

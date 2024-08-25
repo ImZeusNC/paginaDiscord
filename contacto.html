@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ESTILOS CSS -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylesContacto.css">
+
+    <!-- TIPOGRAFIA CARGADA: Raleway -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Beta 1.3</title>
 </head>
 <body>
+
     <div>
         <header>
             <nav class="navegador" id="navbar">
@@ -23,14 +29,39 @@
             </nav><hr class="separador">
         </header>
     </div>
+
+
     <main>
-        <div class="contenedor1">
-            
-        </div>
+        <!-- Contacto: 
+            Incluye logo del grupo
+        -->
+
+        <!-- 2 columnas
+        img | contacto admin + contacto staff-->
+        <section id="contacto">
+            <div id="contacto-logo">
+                <img src="img/Logo.png" alt="POAM(Pro)">
+            </div>
+
+            <div id="contactos">
+                <div class="contacto-tarjeta amarillo">
+                    <h2 class="c-amarillo">Admin</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere fugiat possimus quidem molestias quod atque perferendis. Ducimus impedit, perspiciatis tempora sit adipisci animi distinctio, nulla aut provident velit, quos culpa.</p>
+                </div>
+                <div class="contacto-tarjeta verde">
+                    <h2 class="c-verde">Staff</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni architecto cumque soluta inventore autem natus minima eum? Minima officiis illo voluptates quam nesciunt, similique voluptatem dignissimos quaerat, vero hic enim.</p>
+                </div>
+            </div>
+        </section>
     </main>
+
+
     <footer>
         <p>Página hecha por el equipo de POAM</p>
     </footer>
+
+
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/3af070622f.js" crossorigin="anonymous"></script>
 </body>
